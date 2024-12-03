@@ -1,0 +1,23 @@
+{
+  "name": "ca-trpc-poc",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "dev:server": "tsx watch src/server",
+    "dev:client": "tsx src/client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@trpc/client": "^11.0.0-rc.648",
+    "@trpc/server": "^11.0.0-rc.648",
+    "zod": "^3.23.8"
+  }
+}

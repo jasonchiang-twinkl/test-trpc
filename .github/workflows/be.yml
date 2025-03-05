@@ -2,12 +2,12 @@ name: Test conditional be workflow
 on:
   push:
     paths:
-      - 'packages/backend'
+      - 'packages/backend/**'
     branches:
       - main
   pull_request:
     paths:
-      - 'packages/backend'
+      - 'packages/backend/**'
     branches:
       - main
 

@@ -2,12 +2,12 @@ name: Test conditional fe workflow
 on:
   push:
     paths:
-      - 'packages/frontend'
+      - 'packages/frontend/**'
     branches:
       - main
   pull_request:
     paths:
-      - 'packages/frontend'
+      - 'packages/frontend/**'
     branches:
       - main
 

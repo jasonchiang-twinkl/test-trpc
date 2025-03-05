@@ -5,7 +5,9 @@
   "types": "index.ts",
   "scripts": {
     "dev:server": "tsx watch src/server",
-    "dev:client": "tsx src/client"
+    "dev:client": "tsx src/client",
+    "backend": "tsx packages/backend/index",
+    "frontend": "tsx packages/frontend/index"
   },
   "keywords": [],
   "author": "",

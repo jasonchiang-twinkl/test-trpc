@@ -1,0 +1,29 @@
+name: Test conditional be workflow
+on:
+  push:
+    paths:
+      - 'packages/backend'
+    branches:
+      - main
+  pull_request:
+    paths:
+      - 'packages/backend'
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - name: Run backend
+        run: |
+          echo "Testing Backend"
+          pnpm backend
